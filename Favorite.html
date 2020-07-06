@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(orange, yellow);
+        padding: 15px;
+      }
+      .nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+      }
+      .nav a:hover {
+        color: #ccc;
+      }
+      .nav input {
+        outline: none;
+        border: 3px solid #ccc;
+        padding: 5px;
+        transition: all 0.5s ease;
+      }
+      .nav input:focus {
+        border: 3px solid black;
+      }
+      ul {
+        margin: 50px;
+        background-color: #343a40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        flex-direction: row;
+        border: 3px solid #ccc;
+      }
+      li {
+        border-radius: 10px;
+        text-align: center;
+        color: rgb(82, 82, 250);
+        margin: 15px;
+      }
+      li img {
+        border-radius: 8px 8px 0 0;
+        width: 300px;
+        height: 100%;
+      }
+      li a:hover {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body onload="showFav()">
+    <div class="nav">
+      <a href="./index.html">Movies</a>
+      <input type="text" placeholder="Search" />
+      <a href="./Favorite.html">Favorate</a>
+    </div>
+    <ul id="list"></ul>
+    <script src="./script.js"></script>
+  </body>
+</html>
